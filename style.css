@@ -35,7 +35,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    opacity: 0;
+    
 }
 
 .intro h1{
@@ -50,6 +50,7 @@ color: rgb(224, 224, 224);
 font-size: 20px;
 background: rgb(45,117,96);
 border-radius: 3px;
+cursor: pointer;
 }
 
 .match{
@@ -74,4 +75,14 @@ border-radius: 3px;
 
 .player-hand {
     transform: rotateY(180deg);
+}
+
+div.fadeout{
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadein{
+    opacity: 1;
+    pointer-events: all;
 }
